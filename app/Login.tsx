@@ -15,7 +15,7 @@ export default function Login () {
     } else {
         return (
             <div className="w-full flex justify-center items-center flex-col">
-                <button onClick={() => signIn()} type="button" className="dark:text-white rounded-full bg-orange-500 p-3 my-3">Try to sign in</button>
+                <button onClick={() => signIn()} type="button" className="dark:text-white rounded-full bg-orange-500 p-3 my-3 hover:bg-orange-700 transition duration-200">Join us with provider</button>
             </div>
         )
     }
