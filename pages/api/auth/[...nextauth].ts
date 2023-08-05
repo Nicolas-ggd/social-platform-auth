@@ -2,6 +2,7 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 import FacebookProvider from "next-auth/providers/facebook";
+import DiscordProvider from "next-auth/providers/discord";
 
 export default NextAuth({
   // Configure one or more authentication providers
@@ -18,6 +19,10 @@ export default NextAuth({
     FacebookProvider({
       clientId: "638586751571937",
       clientSecret: "acc7f3972f1134c843655559860c5e09",
+    }),
+    DiscordProvider({
+      clientId: "1137464676582707321",
+      clientSecret: "wGGNKCEOhz-T4YHssjyh-zZ5UADU8KKM",
     }),
     // ...add more providers here
   ],
