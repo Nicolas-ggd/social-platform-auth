@@ -7,16 +7,16 @@ export default function Login () {
 
     if (session) {
         return (
-            <>
-                <button onClick={() => signOut()} type="button" className="dark:text-white rounded-full bg-orange-500 p-3">Sign out of google</button>
+            <div className="w-full flex justify-center items-center flex-col">
+                <button onClick={() => signOut()} type="button" className="dark:text-white rounded-full bg-blue-500 p-3 my-3">Sign Out</button>
                 <UserCard user={session.user} />
-            </>
+            </div>
         )
     } else {
         return (
-            <>
-                <button onClick={() => signIn()} type="button" className="dark:text-white rounded-full bg-orange-500 p-3">Sign in with google</button>
-            </>
+            <div className="w-full flex justify-center items-center flex-col">
+                <button onClick={() => signIn()} type="button" className="dark:text-white rounded-full bg-orange-500 p-3 my-3">Try to sign in</button>
+            </div>
         )
     }
 }; 
